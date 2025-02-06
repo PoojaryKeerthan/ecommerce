@@ -1,0 +1,109 @@
+/* General styling for the product list page */
+.product-list {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Grid layout for the product cards */
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  /* Styling for individual cards */
+  .card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;  /* This will allow content to grow and the buttons to stay at the bottom */
+    height: 100%;
+    transition: transform 0.2s ease;
+  }
+  
+  /* Hover effect for cards */
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Card header with image */
+  .card-header {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    object-fit: cover;
+  }
+  
+  /* Card body content */
+  .card-body {
+    padding: 20px;
+    flex-grow: 1; /* This allows the body content to grow and push the buttons down */
+    font-size: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card-category,
+  .card-price,
+  .card-description,
+  .card-company {
+    font-size: 1.3rem;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  /* Card footer with two buttons */
+  .card-footer {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    background-color: #f8f8f8;
+    display: flex;  /* Flexbox to align buttons side by side */
+    justify-content: space-around; /* Spacing between buttons */
+  }
+  
+  .card-footer .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 45%;  /* Makes each button take up 45% of the footer */
+  }
+  
+  .card-footer .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .card-footer .btn-secondary {
+    background-color: #28a745;  /* Different color for the second button */
+  }
+  
+  .card-footer .btn-secondary:hover {
+    background-color: #218838;
+  }
+  
