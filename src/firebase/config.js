@@ -9,12 +9,12 @@ import { v4 } from "uuid";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDSmm9zk-_XDVE7r1ic1xaOlg79wB0XPJU",
-  authDomain: "bookify-844ab.firebaseapp.com",
-  projectId: "bookify-844ab",
-  storageBucket: "bookify-844ab.appspot.com",
-  messagingSenderId: "611791938691",
-  appId: "1:611791938691:web:24caad2978cc8fbf58a7b6"
+  apiKey: import.meta.env.API_KEY,
+  authDomain: import.meta.env.AUTHDOMAIN,
+  projectId: import.meta.env.PROJECT_ID,
+  storageBucket: import.meta.env.STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.MESSAGE_SENDER_ID,
+  appId: import.meta.env.APP_ID,
 };
 
 
